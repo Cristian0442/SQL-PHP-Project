@@ -1,0 +1,266 @@
+/* Resetare stiluri de bază pentru a evita conflictele între browsere */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setări pentru întreaga pagină */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1E1C1; /* Crem deschis pentru fundal */
+    color: #4E3629; /* Text maro închis pentru contrast */
+    line-height: 1.6;
+    font-size: 16px; /* Dimensiune de text uniformă */
+    padding: 0;
+    margin: 0;
+}
+
+/* Definirea unui antet */
+header {
+    background-color: #0072BB; /* Albastru pentru antet */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Meniul de navigare */
+nav {
+    background-color: #7F4F24; /* Maro închis pentru meniu */
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.menu-link {
+    display: block;
+    padding: 12px 25px;
+    background-color: #0072BB; /* Albastru pentru butoane */
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #66B3B7; /* Turcoaz pentru hover */
+    color: #4E3629; /* Text maro la hover */
+    transform: scale(1.05); /* Efect de mărire la hover */
+}
+
+/* Stilizare pentru footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #666;
+    padding: 10px;
+    background-color: #f1f1f1; /* Adăugăm o culoare de fundal pentru footer */
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8em; /* Reducem dimensiunea fontului pe dispozitive mobile */
+        padding: 15px; /* Adăugăm un padding mai mare pentru a îmbunătăți aspectul */
+    }
+}
+
+/* Buton delogare */
+button.logout-button {
+    color: white;
+    background-color: #D14D40; /* Maro-roșu pentru butonul de delogare */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button.logout-button:hover {
+    background-color: #A53D2B; /* Maro mai închis pentru hover */
+}
+
+/* Alte stiluri generale pentru tabele și formulare */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border: 1px solid #4E3629; /* Maro închis pentru borduri */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0072BB; /* Albastru pentru header-ul tabelului */
+    color: white;
+}
+
+td {
+    background-color: #F4E1A1; /* Galben deschis pentru celulele de date */
+}
+
+tr:nth-child(even) {
+    background-color: #F2D192; /* Galben mai deschis pentru linii pare */
+}
+
+tr:hover {
+    background-color: #F4E1A1; /* Galben deschis la hover */
+}
+
+/* Stiluri pentru inputuri și selecturi */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4E3629; /* Maro închis pentru borduri */
+    border-radius: 5px;
+    font-size: 1em;
+    color: #4E3629;
+    background-color: #F1E1C1; /* Crem deschis */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #0072BB; /* Albastru la focus */
+    outline: none;
+}
+
+/* Butoane pentru formulare */
+input[type="submit"], button {
+    padding: 12px 20px;
+    background-color: #0072BB; /* Albastru */
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #66B3B7; /* Turcoaz la hover */
+}
+
+/* Stiluri pentru linkuri de tip buton */
+button, a.button {
+    padding: 10px 20px;
+    background-color: #0072BB;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a.button:hover {
+    background-color: #66B3B7; /* Turcoaz la hover */
+}
+
+/* Stilizare pentru linkurile de tip buton de revenire */
+a.revenire {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0072BB; /* Albastru închis */
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+a.revenire:hover {
+    background-color: #66B3B7; /* Turcoaz pentru hover */
+    transform: scale(1.05); /* Efect de mărire la hover */
+}
+
+a.revenire:focus {
+    outline: none;
+    background-color: #66B3B7; /* Schimbare la focus pentru accesibilitate */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Adaugă un scroll vertical dacă tabelul este prea mare */
+    max-height: 400px; /* Limitează înălțimea tabelului */
+}
+
+a.revenire {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 40px; /* Asigură un spațiu între tabel și butonul de revenire */
+}
+
+/* Stilizarea butonului de delogare */
+.logout-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745; /* Verde vibrant */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px; /* Margini rotunjite */
+    transition: background-color 0.3s, transform 0.3s; /* Efecte de tranziție pentru culoare și transformare */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adăugarea unei umbre subtile */
+    border: none; /* Înlăturăm eventualele margini */
+}
+
+/* Culoare la hover */
+.logout-btn:hover {
+    background-color: #218838; /* Verde mai închis la hover */
+    transform: scale(1.05); /* Mărirea butonului pentru un efect vizual plăcut */
+}
+
+/* Culoare la apăsare */
+.logout-btn:active {
+    background-color: #1e7e34; /* Verde și mai închis atunci când este apăsat */
+    transform: scale(1); /* Resetarea efectului de scalare când este apăsat */
+}
